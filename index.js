@@ -27,7 +27,6 @@ app.use(require('./routes/auth'))
 app.use(require('./routes/post'))
 app.use(require('./routes/user'))
 
-console.log(process.env.NODE_ENV)
 if(process.env.NODE_ENV=="production"){
     app.use(express.static('client/build'))
     const path = require('path')
