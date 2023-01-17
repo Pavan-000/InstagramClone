@@ -13,7 +13,8 @@ mongoose.connect(MONGOURI,{
 
 },(err)=>{
     if (err){
-        console.log("Error Connecting Db")
+        console.log(MONGOURI)
+        console.log("Error Connecting Db",err)
     }
     else{
         console.log("Db Started")
