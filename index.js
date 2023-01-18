@@ -39,6 +39,7 @@ app.use(require('./routes/user'))
 // }
 
 app.get("/",async(req,res)=>{
+    console.log(process.env.NODE_ENV,process.env.MONGO_URI)
     res.send("Welcome to Instagram Server")
 })
 
